@@ -1,27 +1,28 @@
-# EditifyAI - Advanced Photo & Video Editing
+# MedStore - Professional Medical Store Application
 
-EditifyAI is a powerful AI-powered mobile application that provides advanced photo and video editing tools with an intuitive interface.
+MedStore is a complete, production-ready Medical Store Application for Web and Mobile, designed to provide a seamless experience for users to purchase medicine online.
 
 ## Features
 
-- **AI-enhanced filters** and one-tap retouching
-- **Background remover and replacer** for both photos and videos
-- **Object eraser, skin smoothing, and face reshaping**
-- **Video editing** tools including trimming, transitions, text overlays, and music syncing
-- **AI-generated effects** like motion blur, cinemagraphs, and color grading
-- **High-resolution export** for all social media platforms
-- **User-friendly interface** with drag-and-drop editing and real-time previews
+- **User Authentication:** Register/login via email, phone number, and OTP verification
+- **Medicine Catalogue:** Browse medicines by categories with detailed information
+- **Prescription Upload:** Upload prescriptions for specific medicines
+- **Shopping Cart & Checkout:** Complete e-commerce functionality
+- **Order Tracking:** Track orders through various status updates
+- **Admin Dashboard:** Manage inventory, orders, prescriptions, and more
+- **Notifications:** Receive updates for orders and offers
+- **Security:** Data encryption and secure login with OTP/2FA
 
 ## Tech Stack
 
-- React with Vite
-- TensorFlow.js for client-side AI processing
-- Fabric.js for image manipulation
-- FFmpeg.wasm for video processing
+- React with Vite for the frontend
+- Zustand for state management
+- Firebase for authentication, storage, and notifications
+- CockroachDB with Drizzle ORM for the database
 - Tailwind CSS for styling
 - React Router for navigation
 - Framer Motion for animations
-- Zustand for state management
+- Vercel for deployment
 
 ## Development
 
@@ -43,13 +44,17 @@ npm run serve
 
 ```
 src/
-├── components/         # Reusable UI components
-├── pages/              # Application pages
-│   ├── Home/           # Landing page
-│   ├── Editor/         # Main editing interface
-│   └── Gallery/        # Project gallery
-├── store/              # Zustand state management
-└── utils/              # Utility functions
+├── components/       # Reusable UI components
+├── modules/          # Feature modules
+│   ├── auth/         # Authentication functionality
+│   ├── cart/         # Shopping cart functionality
+│   ├── catalogue/    # Medicine catalogue
+│   ├── checkout/     # Checkout process
+│   ├── orders/       # Order tracking and history
+│   ├── prescriptions/ # Prescription management
+│   └── admin/        # Admin dashboard
+├── pages/            # Application pages
+└── utils/            # Utility functions
 ```
 
 ## License

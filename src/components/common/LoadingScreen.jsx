@@ -10,7 +10,7 @@ const LoadingScreen = () => {
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
       >
-        <div className="w-16 h-16 border-4 border-gray-200 border-t-indigo-600 rounded-full animate-spin"></div>
+        <div className="w-16 h-16 border-4 border-gray-200 border-t-blue-600 rounded-full animate-spin"></div>
       </motion.div>
       <motion.p 
         className="mt-4 text-gray-600 font-medium"
